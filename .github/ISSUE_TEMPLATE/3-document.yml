@@ -1,0 +1,46 @@
+name: Documentation
+description: Report issues or suggest improvements for documentation and samples
+labels:
+  - documentation
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        > [!IMPORTANT]
+        > Thanks for helping us improve our documentation!
+        >
+        > Please search **[existing issues](https://github.com/OwenClaw/ArcodeX/issues)** to see if this documentation issue has already been reported.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: What type of documentation issue is this?
+      options:
+        - Missing documentation (content should exist but doesn't)
+        - Incorrect or outdated documentation
+        - Unclear or confusing documentation
+        - Missing code sample / example
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What needs to be improved?
+      description: Describe the documentation issue or improvement needed. Include links to the relevant docs if possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement (optional)
+      description: If you have a specific suggestion for how to fix this, describe it here.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the documentation issue here.

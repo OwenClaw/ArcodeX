@@ -1,0 +1,40 @@
+name: Feature Request
+description: Suggest an idea, feature, or enhancement
+labels:
+  - triage
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        > [!IMPORTANT]
+        > Thanks for suggesting an enhancement!
+        >
+        > Please search **[existing issues](https://github.com/OwenClaw/ArcodeX/issues)** to see if a similar feature has already been requested.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like to be added?
+      description: A clear and concise description of the feature or enhancement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this needed?
+      description: Explain why this feature would be valuable. What problem does it solve? Who would benefit?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed solution (optional)
+      description: If you have a specific implementation idea, describe it here.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context, mockups, or screenshots about the feature request here.

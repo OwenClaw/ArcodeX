@@ -1,0 +1,6 @@
+Create a new spec artifact file for the SDD workflow.
+
+Use this tool ONLY when creating new spec workflow artifacts (spec.md, plan.md, tasks.md). Do NOT use this tool to update existing artifacts — for updates, use the `edit` tool instead.
+
+The filePath parameter is the absolute path to the file to write.
+The content parameter is the content to write.

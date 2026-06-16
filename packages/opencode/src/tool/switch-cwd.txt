@@ -1,0 +1,10 @@
+Switch the session project context directory for Harmony project actions.
+
+Use this tool before running `build_project` or `start_app`.
+These tools only work correctly when the context directory is a valid project path.
+If the current context directory is already the ArkTS project root, do not switch again.
+When the `deveco-create-project` skill creates a full project under the current path,
+you must switch to that generated project directory before running `build_project` or `start_app`.
+Accepts absolute paths and relative paths (resolved from the current workspace directory).
+
+For project-creation requests (新建/创建/scaffold), you MUST first load the `deveco-create-project` skill instead of using this tool to jump to an existing directory. If the target already exists, the skill script will emit `PROJECT_EXISTS` (exit 2) — use `AskUserQuestion` to let the user choose overwrite/rename/cancel.
